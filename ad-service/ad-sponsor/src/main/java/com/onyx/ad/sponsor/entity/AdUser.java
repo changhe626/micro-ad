@@ -31,7 +31,7 @@ public class AdUser {
     private String username;
 
     @Basic
-    @Column(name = "token", nullable = false)
+    @Column(name = "token", nullable = false, insertable = false, updatable = false)
     private String token;
 
     @Basic
