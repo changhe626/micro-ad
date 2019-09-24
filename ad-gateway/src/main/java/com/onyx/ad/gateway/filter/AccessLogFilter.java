@@ -1,4 +1,4 @@
-package com.onyx.ad.filter;
+package com.onyx.ad.gateway.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -6,6 +6,9 @@ import com.netflix.zuul.exception.ZuulException;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
+/**
+ * 访问时间
+ */
 @Component
 public class AccessLogFilter extends ZuulFilter {
 

@@ -1,12 +1,10 @@
-package com.onyx.ad.filter;
+package com.onyx.ad.gateway.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
-
-import javax.servlet.FilterConfig;
 
 /**
  * 记录响应的时间

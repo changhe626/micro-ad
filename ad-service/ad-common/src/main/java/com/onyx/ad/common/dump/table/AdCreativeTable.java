@@ -1,4 +1,4 @@
-package com.onyx.ad.dump.table;
+package com.onyx.ad.common.dump.table;
 
 
 public class AdCreativeTable {

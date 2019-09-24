@@ -1,4 +1,4 @@
-package com.onyx.ad.vo;
+package com.onyx.ad.common.vo;
 
 
 import java.io.Serializable;

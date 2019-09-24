@@ -1,4 +1,4 @@
-package com.onyx.ad.annotation;
+package com.onyx.ad.common.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

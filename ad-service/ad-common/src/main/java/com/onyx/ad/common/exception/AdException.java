@@ -1,4 +1,4 @@
-package com.onyx.ad.exception;
+package com.onyx.ad.common.exception;
 
 
 public class AdException extends RuntimeException {

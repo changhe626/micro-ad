@@ -1,7 +1,7 @@
-package com.onyx.ad.advice;
+package com.onyx.ad.common.advice;
 
-import com.onyx.ad.annotation.IgnoreResponseAdvice;
-import com.onyx.ad.vo.CommonResponse;
+import com.onyx.ad.common.annotation.IgnoreResponseAdvice;
+import com.onyx.ad.common.vo.CommonResponse;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;

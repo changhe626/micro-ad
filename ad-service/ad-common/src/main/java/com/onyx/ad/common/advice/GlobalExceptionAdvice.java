@@ -1,7 +1,7 @@
-package com.onyx.ad.advice;
+package com.onyx.ad.common.advice;
 
-import com.onyx.ad.exception.AdException;
-import com.onyx.ad.vo.CommonResponse;
+import com.onyx.ad.common.exception.AdException;
+import com.onyx.ad.common.vo.CommonResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

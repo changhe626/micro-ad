@@ -1,4 +1,4 @@
-package com.onyx.ad.conf;
+package com.onyx.ad.common.conf;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;

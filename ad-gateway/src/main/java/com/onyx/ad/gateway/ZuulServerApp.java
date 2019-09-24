@@ -1,4 +1,4 @@
-package com.onyx.ad;
+package com.onyx.ad.gateway;
 
 
 import org.springframework.boot.SpringApplication;

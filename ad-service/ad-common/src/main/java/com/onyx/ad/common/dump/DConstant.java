@@ -1,4 +1,4 @@
-package com.onyx.ad.dump;
+package com.onyx.ad.common.dump;
 
 
 public class DConstant {
