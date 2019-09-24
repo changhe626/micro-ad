@@ -27,11 +27,11 @@ public class AdUser {
 
     // @Transient  标明某个属性不是数据库的字段
     @Basic   //属性是数据库的字段
-    @Column(name = "token", nullable = false)
+    @Column(name = "username", nullable = false)
     private String username;
 
     @Basic
-    @Column(name = "token", nullable = false, insertable = false, updatable = false)
+    @Column(name = "token", nullable = false)
     private String token;
 
     @Basic
