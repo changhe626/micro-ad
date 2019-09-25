@@ -12,49 +12,49 @@ public class AdPlanIndex implements IndexAware<Long, AdPlanObject> {
     /**
      * 考虑到并发的情况
      */
-    private static ConcurrentHashMap<Long, AdPlanObject> map = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<Long, AdPlanObject> indexMap = new ConcurrentHashMap<>();
 
 
     @Override
     public AdPlanObject get(Long key) {
-        return map.get(key);
+        return indexMap.get(key);
     }
 
 
     @Override
     public void add(Long key, AdPlanObject value) {
-        log.info("before delete: {}", map);
-        map.put(key, value);
-        log.info("before delete: {}", map);
+        log.info("before delete: {}", indexMap);
+        indexMap.put(key, value);
+        log.info("before delete: {}", indexMap);
     }
 
 
     @Override
     public void update(Long key, AdPlanObject value) {
-        log.info("before update: {}", map);
-        AdPlanObject oldObject = map.get(key);
+        log.info("before update: {}", indexMap);
+        AdPlanObject oldObject = indexMap.get(key);
         if (null == oldObject) {
-            map.put(key, value);
+            indexMap.put(key, value);
         } else {
             oldObject.update(value);
         }
-        log.info("after update: {}", map);
+        log.info("after update: {}", indexMap);
     }
 
 
     @Override
     public void delete(Long key, AdPlanObject value) {
-        log.info("before delete: {}", map);
-        map.remove(key, value);
-        log.info("before delete: {}", map);
+        log.info("before delete: {}", indexMap);
+        indexMap.remove(key, value);
+        log.info("before delete: {}", indexMap);
     }
 
 
     @Override
     public void delete(Long key) {
-        log.info("before delete: {}", map);
-        map.remove(key);
-        log.info("before delete: {}", map);
+        log.info("before delete: {}", indexMap);
+        indexMap.remove(key);
+        log.info("before delete: {}", indexMap);
     }
 
 

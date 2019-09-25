@@ -14,11 +14,10 @@ public class AdUnitObject {
     private Integer unitStatus;
     private Integer positionType;
     private Long planId;
-
+    //对象持有
     private AdPlanObject adPlanObject;
 
     void update(AdUnitObject newObject) {
-
         if (null != newObject.getUnitId()) {
             this.unitId = newObject.getUnitId();
         }
