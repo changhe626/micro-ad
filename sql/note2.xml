@@ -1,0 +1,123 @@
+<applications>
+    <versions__delta>1</versions__delta>
+    <apps__hashcode>UP_2_</apps__hashcode>
+    <application>
+        <name>AD-GATEWAY</name>
+        <instance>
+            <instanceId>USERCHI-L3B5GAB:ad-gateway:9000</instanceId>
+            <hostName>USERCHI-L3B5GAB</hostName>
+            <app>AD-GATEWAY</app>
+            <ipAddr>192.168.0.93</ipAddr>
+            <status>UP</status>
+            <overriddenstatus>UNKNOWN</overriddenstatus>
+            <port enabled="true">9000</port>
+            <securePort enabled="false">443</securePort>
+            <countryId>1</countryId>
+            <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+                <name>MyOwn</name>
+            </dataCenterInfo>
+            <leaseInfo>
+                <renewalIntervalInSecs>30</renewalIntervalInSecs>
+                <durationInSecs>90</durationInSecs>
+                <registrationTimestamp>1569395574752</registrationTimestamp>
+                <lastRenewalTimestamp>1569395694139</lastRenewalTimestamp>
+                <evictionTimestamp>0</evictionTimestamp>
+                <serviceUpTimestamp>1569395573856</serviceUpTimestamp>
+            </leaseInfo>
+            <metadata>
+                <management.port>9000</management.port>
+                <jmx.port>51669</jmx.port>
+            </metadata>
+            <homePageUrl>http://USERCHI-L3B5GAB:9000/</homePageUrl>
+            <statusPageUrl>http://USERCHI-L3B5GAB:9000/actuator/info</statusPageUrl>
+            <healthCheckUrl>http://USERCHI-L3B5GAB:9000/actuator/health</healthCheckUrl>
+            <vipAddress>ad-gateway</vipAddress>
+            <secureVipAddress>ad-gateway</secureVipAddress>
+            <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+            <lastUpdatedTimestamp>1569395574753</lastUpdatedTimestamp>
+            <lastDirtyTimestamp>1569395573599</lastDirtyTimestamp>
+            <actionType>ADDED</actionType>
+        </instance>
+    </application>
+    <application>
+        <name>AD-GATEWAY2</name>
+        <instance>
+            <instanceId>USERCHI-L3B5GAB:ad-gateway2:9001</instanceId>
+            <hostName>USERCHI-L3B5GAB</hostName>
+            <app>AD-GATEWAY2</app>
+            <ipAddr>192.168.0.93</ipAddr>
+            <status>UP</status>
+            <overriddenstatus>UNKNOWN</overriddenstatus>
+            <port enabled="true">9001</port>
+            <securePort enabled="false">443</securePort>
+            <countryId>1</countryId>
+            <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+                <name>MyOwn</name>
+            </dataCenterInfo>
+            <leaseInfo>
+                <renewalIntervalInSecs>30</renewalIntervalInSecs>
+                <durationInSecs>90</durationInSecs>
+                <registrationTimestamp>1569395578705</registrationTimestamp>
+                <lastRenewalTimestamp>1569395698556</lastRenewalTimestamp>
+                <evictionTimestamp>0</evictionTimestamp>
+                <serviceUpTimestamp>1569395578185</serviceUpTimestamp>
+            </leaseInfo>
+            <metadata>
+                <management.port>9001</management.port>
+                <jmx.port>51691</jmx.port>
+            </metadata>
+            <homePageUrl>http://USERCHI-L3B5GAB:9001/</homePageUrl>
+            <statusPageUrl>http://USERCHI-L3B5GAB:9001/actuator/info</statusPageUrl>
+            <healthCheckUrl>http://USERCHI-L3B5GAB:9001/actuator/health</healthCheckUrl>
+            <vipAddress>ad-gateway2</vipAddress>
+            <secureVipAddress>ad-gateway2</secureVipAddress>
+            <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+            <lastUpdatedTimestamp>1569395578705</lastUpdatedTimestamp>
+            <lastDirtyTimestamp>1569395578049</lastDirtyTimestamp>
+            <actionType>ADDED</actionType>
+        </instance>
+    </application>
+
+
+
+    <!-- 单独获取一个应用的详情 -->
+    <application>
+        <name>AD-GATEWAY2</name>
+        <instance>
+            <instanceId>USERCHI-L3B5GAB:ad-gateway2:9001</instanceId>
+            <hostName>USERCHI-L3B5GAB</hostName>
+            <app>AD-GATEWAY2</app>
+            <ipAddr>192.168.0.93</ipAddr>
+            <status>UP</status>
+            <overriddenstatus>UNKNOWN</overriddenstatus>
+            <port enabled="true">9001</port>
+            <securePort enabled="false">443</securePort>
+            <countryId>1</countryId>
+            <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+                <name>MyOwn</name>
+            </dataCenterInfo>
+            <leaseInfo>
+                <renewalIntervalInSecs>30</renewalIntervalInSecs>
+                <durationInSecs>90</durationInSecs>
+                <registrationTimestamp>1569394959752</registrationTimestamp>
+                <lastRenewalTimestamp>1569395138998</lastRenewalTimestamp>
+                <evictionTimestamp>0</evictionTimestamp>
+                <serviceUpTimestamp>1569394959013</serviceUpTimestamp>
+            </leaseInfo>
+            <metadata>
+                <management.port>9001</management.port>
+                <jmx.port>51171</jmx.port>
+            </metadata>
+            <homePageUrl>http://USERCHI-L3B5GAB:9001/</homePageUrl>
+            <statusPageUrl>http://USERCHI-L3B5GAB:9001/actuator/info</statusPageUrl>
+            <healthCheckUrl>http://USERCHI-L3B5GAB:9001/actuator/health</healthCheckUrl>
+            <vipAddress>ad-gateway2</vipAddress>
+            <secureVipAddress>ad-gateway2</secureVipAddress>
+            <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+            <lastUpdatedTimestamp>1569394959752</lastUpdatedTimestamp>
+            <lastDirtyTimestamp>1569394958426</lastDirtyTimestamp>
+            <actionType>ADDED</actionType>
+        </instance>
+    </application>
+
+</applications>
