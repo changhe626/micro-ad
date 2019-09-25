@@ -21,7 +21,7 @@ public class IndexFileLoader {
 
     @PostConstruct
     public void init() {
-
+/*
         List<String> adPlanStrings = loadDumpData(
                 String.format("%s%s",
                         DConstant.DATA_ROOT_DIR,
@@ -90,7 +90,7 @@ public class IndexFileLoader {
         adUnitKeywordStrings.forEach(k -> AdLevelDataHandler.handleLevel4(
                 JSON.parseObject(k, AdUnitKeywordTable.class),
                 OpType.ADD
-        ));
+        ));*/
     }
 
     private List<String> loadDumpData(String fileName) {

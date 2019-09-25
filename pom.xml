@@ -11,6 +11,7 @@
         <module>ad-eureka</module>
         <module>ad-gateway</module>
         <module>ad-service</module>
+        <module>ad-gateway2</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -40,4 +40,11 @@ public class SearchController {
     }
 
 
+    @GetMapping("test2")
+    public String test2(){
+        return "success";
+    }
+
+
+
 }

@@ -88,7 +88,7 @@ public class UnitDistrictIndex implements IndexAware<String, Set<Long>> {
 
     }
 
-    public boolean match(Long adUnitId,
+    /*public boolean match(Long adUnitId,
                          List<DistrictFeature.ProvinceAndCity> districts) {
 
         if (unitDistrictMap.containsKey(adUnitId) &&
@@ -107,5 +107,5 @@ public class UnitDistrictIndex implements IndexAware<String, Set<Long>> {
         }
 
         return false;
-    }
+    }*/
 }
