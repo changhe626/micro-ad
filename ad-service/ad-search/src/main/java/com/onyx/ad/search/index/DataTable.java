@@ -31,12 +31,10 @@ public class DataTable implements ApplicationContextAware, PriorityOrdered {
 
     @SuppressWarnings("all")
     public static <T> T of(Class<T> clazz) {
-
         T instance = (T) dataTableMap.get(clazz);
         if (null != instance) {
             return instance;
         }
-
         dataTableMap.put(clazz, bean(clazz));
         return (T) dataTableMap.get(clazz);
     }
