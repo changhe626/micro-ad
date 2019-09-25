@@ -4,3 +4,6 @@
 各种状态封装为枚举.
 mysql的配置写全, 不用默认的配置, 防止出错.
 controller的命名加上op,表示是operate,操作.
+
+gateway 暂时不好加统一前缀.
+
