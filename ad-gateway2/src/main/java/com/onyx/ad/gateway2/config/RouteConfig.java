@@ -26,7 +26,6 @@ public class RouteConfig {
         return route;
     }
 
-
     /**
      * 路由规则
      * @param builder
@@ -35,6 +34,7 @@ public class RouteConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
+                                               //路由规则        eureka中注册的服务提供者id
                 .route(r -> r.path("/test/custom").uri("http://ww.baidu.com"))
                 .route(r -> r.path("/ad-search/**").uri("lb://EUREKA-CLIENT-AD-SEARCH"))
                 .route(r->r.path("/ad-sponsor/**").uri("lb://EUREKA-CLIENT-AD-SPONSOR"))
