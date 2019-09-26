@@ -12,6 +12,7 @@
         <module>ad-gateway</module>
         <module>ad-service</module>
         <module>ad-gateway2</module>
+        <module>ad-apollo</module>
     </modules>
     <packaging>pom</packaging>
 

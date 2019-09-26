@@ -13,3 +13,14 @@ eureka的端口号是:8000
 http://localhost:8000/eureka/apps
 查看一个应用的注册信息:
 http://localhost:8000/eureka/apps/ad-gateway2
+
+
+binlog 日志
+开关
+show VARIABLES like 'log_bin'
+日志格式
+show VARIABLES like 'binlog_format'
+
+格式改成ROW.
+
+
