@@ -32,3 +32,7 @@ information_schema.columns  where table_schema=? and table_name=?
 大,而且设计掉高并发的时候非常的不好处理,同时内存的缓存的管理,缓存的失效,穿透等考虑,非常不建议这么做.
 搜索的话,可以直接使用elasticsearch, 或者使用redis进行保存.只是作为缓存数据,进行查询.以mysql数据为准.
 
+
+
+hystrix 的使用效率不高, 结合feign一起使用,调用失败后才调用fallbackmethod, 因为他是使用
+反射进行方法的调用的,所以效率很低.
