@@ -23,4 +23,16 @@ show VARIABLES like 'binlog_format'
 
 格式改成ROW.
 
+//表信息
+select table_schema,table_name,column_name , ordinal_position from
+information_schema.columns  where table_schema=? and table_name=?
 
+
+根据mysql binlog的二进制变化去修改缓存, 是在数据量不大的时候,可以这么做, 真正的实际生产环境中的bin_log非常的
+大,而且设计掉高并发的时候非常的不好处理,同时内存的缓存的管理,缓存的失效,穿透等考虑,非常不建议这么做.
+搜索的话,可以直接使用elasticsearch, 或者使用redis进行保存.只是作为缓存数据,进行查询.以mysql数据为准.
+
+
+
+hystrix 的使用效率不高, 结合feign一起使用,调用失败后才调用fallbackmethod, 因为他是使用
+反射进行方法的调用的,所以效率很低.
